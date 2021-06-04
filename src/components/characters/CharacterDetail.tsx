@@ -3,7 +3,7 @@ import { useHistory } from 'react-router';
 import { useSingleCharacter } from '../../hooks/characters';
 import styles from './CharacterDetail.module.css';
 
-const CharacterDetail = () => {
+const CharacterDetail: React.FC = () => {
   const { loading, character } = useSingleCharacter();
   const history = useHistory();
 
